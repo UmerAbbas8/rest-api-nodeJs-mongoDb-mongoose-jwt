@@ -1,0 +1,45 @@
+GET http://localhost:3000/api/subscribers/test
+
+###
+GET http://localhost:3000/api/subscribers
+
+
+###
+POST http://localhost:3000/api/subscribers
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": "",
+    "name": "",
+    "subscribedToChannel": "",
+    "customFields": [{}]
+}
+
+###
+GET http://localhost:3000/api/subscribers/5de3a4408ee0044ccaea3559
+
+###
+DELETE http://localhost:3000/api/subscribers/5de3ca3d1169346a50c74773
+
+###
+PATCH http://localhost:3000/api/subscribers/5de3cb0196e2766aed52e085
+Content-Type: application/json
+Authorization: bearer token
+
+{
+    "name": "omi omi",
+    "subscribedToChannel": "web dev simplified"
+}
+
+###
+
+POST http://localhost:3000/api/subscribers/login
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": ""
+}
+ 
+ ###
